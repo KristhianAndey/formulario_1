@@ -123,42 +123,61 @@
     <form method="POST" action= "https://script.google.com/macros/s/AKfycbwxJHKp07bJrkZwd_peVQikaPtOpW3qxo2c_Oil8k4sBB0oX7k5ly01ir1dBhw7zkU7nA/exec">
 
     <fieldset>
-      <legend>Datos del Pedido</legend>
+ <h3 style="color: var(--marron); margin-top: 1rem;">Información Personal</h3>
 
-      <label>Nombre</label>
-      <input type="text" name="nombre" required />
+    <label>Nombre(s):</label><br>
+    <input type="text" placeholder="Nombre" required>
 
-      <label>Apellido Paterno</label>
-      <input type="text" name="apellido_paterno" required />
+    <label>Apellido Paterno:</label><br>
+    <input type="text" placeholder="Apellido Paterno">
 
-      <label>Apellido Materno</label>
-      <input type="text" name="apellido_materno" required />
+    <label>Apellido Materno:</label><br>
+    <input type="text" placeholder="Apellido Materno">
 
-      <label>Correo electrónico</label>
-      <input type="email" name="correo" required />
+    <label>Correo electrónico:</label><br>
+    <input type="email" placeholder="ejemplo@gmail.com" required>
 
-      <label>Teléfono</label>
-      <input type="tel" name="telefono" required />
+    <label>Teléfono (opcional):</label><br>
+    <input type="text" placeholder="000-000-0000">
 
-      <label>Producto que deseas pedir</label>
-      <input type="text" name="producto" required />
+    <!-- INFORMACIÓN DEL PEDIDO -->
+    <h3 style="color: var(--marron); margin-top: 2rem;">Información de tu Pedido</h3>
 
-      <label>Cantidad</label>
-      <input type="number" name="cantidad" min="1" required />
+    <label>Producto que deseas pedir:</label><br>
+    <input type="text" placeholder="Nombre del producto / modelo / color" required>
 
-      <label>Detalles o instrucciones especiales</label>
-      <textarea name="detalles" rows="3"></textarea>
+    <label>Cantidad:</label><br>
+    <input type="number" min="1" placeholder="1" required>
 
-      <label>Dirección completa (solo si tu pedido requiere envío)</label>
-      <textarea name="direccion" rows="3"></textarea>
+    <label>Detalles o instrucciones especiales:</label><br>
+    <textarea rows="4" placeholder="Colores, tamaños, personalización…"></textarea>
 
-      <label>Método de contacto preferido</label>
-      <input type="text" name="metodo_contacto" placeholder="WhatsApp, correo, llamada..." />
+    <!-- CONFIRMACIÓN -->
+    <h3 style="color: var(--marron); margin-top: 2rem;">Confirmación de Datos</h3>
 
-      <label>Mensaje adicional</label>
-      <textarea name="mensaje" rows="4"></textarea>
+    <label>Dirección completa (solo si tu pedido requiere envío):</label><br>
+    <textarea rows="3" placeholder="Calle, número, colonia, ciudad, CP"></textarea>
 
-      <button type="submit">Enviar pedido</button>
+    <label>Método de contacto preferido:</label><br>
+    <select style="width: 93%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px;">
+      <option>Correo electrónico</option>
+      <option>Teléfono</option>
+      <option>WhatsApp</option>
+    </select>
+
+    <!-- ACEPTACIÓN DE TÉRMINOS -->
+    <div style="text-align:left; margin-top: 1.5rem; font-size: 14px;">
+      <input type="checkbox" required>
+      <label>Acepto que la información proporcionada es correcta.</label><br>
+
+      <input type="checkbox" required>
+      <label>Acepto los términos, políticas de uso y aviso de privacidad.</label><br>
+    </div>
+
+    <h3 style="color: var(--marron); margin-top: 2rem;">Mensaje adicional</h3>
+    <textarea rows="5" placeholder="Si quieres añadir algo más…"></textarea>
+
+    <button type="submit">Enviar mensaje</button>
     </fieldset>
   </form>
 </div>
