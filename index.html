@@ -20,7 +20,6 @@
       font-family: 'Segoe UI', sans-serif;
       color: var(--gris);
 
-
       background-image: url("https://i.pinimg.com/1200x/32/31/89/3231894da83f90fe4e2bd807d37895d1.jpg");
       background-size: cover;
       background-position: center;
@@ -54,7 +53,6 @@
     nav a:hover {
       color: var(--marron);
     }
-
 
     .form-container {
       background-color: rgba(255, 255, 255, 0.88);
@@ -99,23 +97,10 @@
 
     footer {
       background-color: var(--arena);
-      color: var(--gris);
-      text-align: center;
       padding: 1rem;
+      text-align: center;
       margin-top: 2rem;
-
-      <script>
-        fetch ( 
-      "https://script.google.com/macros/s/AKfycbxEnyu5ZOFwKxuO4QRg5q3u8DlwiGzteFehnpdETXElOCdjhzYN-Ryjls4l_jFF7Tv56A/exec"
-      )
-      redirect: "follow",
-        method: "POST",
-          body: "FormDatastring"
-            headers: {
-            "Content-Type" : "Text/Plain;charset=utf-8"
-          }
-      
-      </script>
+      backdrop-filter: blur(2px);
     }
   </style>
 </head>
@@ -123,85 +108,35 @@
 <body>
 
   <header>
-    <h1> ☁️💛 Contacto HUFF SOFT</h1>
-    <p>Queremos saber de ti</p>
+    <h1>HUFF SOFT</h1>
   </header>
 
   <nav>
-    <a href="index_homeHUFFSOFT.html">Inicio</a>
-    <a href="index_catálogoHS.html">Catálogo</a>
-    <a href="index.html">Contacto</a>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
   </nav>
 
-  
   <div class="form-container">
-    <div class="form-container">
-  <form>
-    <h2>📩 Escríbenos</h2>
+    <h2>Contacto</h2>
+    
+    <form method="POST" action= "https://script.google.com/macros/s/AKfycbwxJHKp07bJrkZwd_peVQikaPtOpW3qxo2c_Oil8k4sBB0oX7k5ly01ir1dBhw7zkU7nA/exec">
 
-    <!-- DATOS PERSONALES -->
-    <h3 style="color: var(--marron); margin-top: 1rem;">Información Personal</h3>
+      <fieldset>
+        <legend>Formulario de contacto</legend>
 
-    <label>Nombre(s):</label><br>
-    <input type="text" placeholder="Nombre" required>
+        <input type="text" name="nombre" placeholder="Ingresa tu nombre" required />
+        <input type="email" name="correo" placeholder="Ingresa tu correo" required />
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
 
-    <label>Apellido Paterno:</label><br>
-    <input type="text" placeholder="Apellido Paterno">
+        <button type="submit">Enviar</button>
+      </fieldset>
 
-    <label>Apellido Materno:</label><br>
-    <input type="text" placeholder="Apellido Materno">
-
-    <label>Correo electrónico:</label><br>
-    <input type="email" placeholder="ejemplo@gmail.com" required>
-
-    <label>Teléfono (opcional):</label><br>
-    <input type="text" placeholder="000-000-0000">
-
-    <!-- INFORMACIÓN DEL PEDIDO -->
-    <h3 style="color: var(--marron); margin-top: 2rem;">Información de tu Pedido</h3>
-
-    <label>Producto que deseas pedir:</label><br>
-    <input type="text" placeholder="Nombre del producto / modelo / color" required>
-
-    <label>Cantidad:</label><br>
-    <input type="number" min="1" placeholder="1" required>
-
-    <label>Detalles o instrucciones especiales:</label><br>
-    <textarea rows="4" placeholder="Colores, tamaños, personalización…"></textarea>
-
-    <!-- CONFIRMACIÓN -->
-    <h3 style="color: var(--marron); margin-top: 2rem;">Confirmación de Datos</h3>
-
-    <label>Dirección completa (solo si tu pedido requiere envío):</label><br>
-    <textarea rows="3" placeholder="Calle, número, colonia, ciudad, CP"></textarea>
-
-    <label>Método de contacto preferido:</label><br>
-    <select style="width: 93%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px;">
-      <option>Correo electrónico</option>
-      <option>Teléfono</option>
-      <option>WhatsApp</option>
-    </select>
-
-    <!-- ACEPTACIÓN DE TÉRMINOS -->
-    <div style="text-align:left; margin-top: 1.5rem; font-size: 14px;">
-      <input type="checkbox" required>
-      <label>Acepto que la información proporcionada es correcta.</label><br>
-
-      <input type="checkbox" required>
-      <label>Acepto los términos, políticas de uso y aviso de privacidad.</label><br>
-    </div>
-
-    <h3 style="color: var(--marron); margin-top: 2rem;">Mensaje adicional</h3>
-    <textarea rows="5" placeholder="Si quieres añadir algo más…"></textarea>
-
-    <!-- BOTÓN -->
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</div>
-
+    </form>
+  </div>
 
   <footer>
-    <p>© 2025 HUFF SOFT KA. Todos los derechos reservados.</p>
+    <p>© 2025 HUFF SOFT — Todos los derechos reservados.</p>
   </footer>
 
 </body>
