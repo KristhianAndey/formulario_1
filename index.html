@@ -122,18 +122,47 @@
     
     <form method="POST" action= "https://script.google.com/macros/s/AKfycbwxJHKp07bJrkZwd_peVQikaPtOpW3qxo2c_Oil8k4sBB0oX7k5ly01ir1dBhw7zkU7nA/exec">
 
-      <fieldset>
-        <legend>Formulario de contacto</legend>
+    <fieldset>
+      <legend>Datos del Pedido</legend>
 
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre" required />
-        <input type="email" name="correo" placeholder="Ingresa tu correo" required />
-        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+      <label>Nombre</label>
+      <input type="text" name="nombre" required />
 
-        <button type="submit">Enviar</button>
-      </fieldset>
+      <label>Apellido Paterno</label>
+      <input type="text" name="apellido_paterno" required />
 
-    </form>
-  </div>
+      <label>Apellido Materno</label>
+      <input type="text" name="apellido_materno" required />
+
+      <label>Correo electrónico</label>
+      <input type="email" name="correo" required />
+
+      <label>Teléfono</label>
+      <input type="tel" name="telefono" required />
+
+      <label>Producto que deseas pedir</label>
+      <input type="text" name="producto" required />
+
+      <label>Cantidad</label>
+      <input type="number" name="cantidad" min="1" required />
+
+      <label>Detalles o instrucciones especiales</label>
+      <textarea name="detalles" rows="3"></textarea>
+
+      <label>Dirección completa (solo si tu pedido requiere envío)</label>
+      <textarea name="direccion" rows="3"></textarea>
+
+      <label>Método de contacto preferido</label>
+      <input type="text" name="metodo_contacto" placeholder="WhatsApp, correo, llamada..." />
+
+      <label>Mensaje adicional</label>
+      <textarea name="mensaje" rows="4"></textarea>
+
+      <button type="submit">Enviar pedido</button>
+    </fieldset>
+  </form>
+</div>
+
 
   <footer>
     <p>© 2025 HUFF SOFT — Todos los derechos reservados.</p>
